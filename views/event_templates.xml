@@ -20,16 +20,36 @@
                         <label>Téléphone <small>(Optionnel)</small></label>
                         <input class="form-control" type="tel" t-attf-name="#{counter}-phone"/>
                     </div>
+                    <!--
                     <div class="col-lg my-2">
                         <label>Mobile <small>(Optionnel)</small></label>
                         <input class="form-control" type="tel" t-attf-name="#{counter}-mobile"/>
                     </div>
-
+                    -->
+                </div>
+                <div class="row">
                     <div class="col-lg my-2">
                         <label>Société <small>(Optionnel)</small></label>
                         <input class="form-control" type="text" t-attf-name="#{counter}-is_societe"/>
                     </div>
-
+                    <div class="col-lg my-2">
+                        <label>Fonction <small>(Optionnel)</small></label>
+                        <input class="form-control" type="text" t-attf-name="#{counter}-is_fonction"/>
+                    </div>
+                    <div class="col-lg my-2">
+                        <label>Adhérent <small>(Optionnel)</small></label><br />
+                        <select t-attf-name="#{counter}-is_adherent" class="custom-select w-auto">
+                            <option></option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg my-2">
+                        <label>Commentaire <small>(Optionnel)</small></label>
+                        <input class="form-control" type="text" t-attf-name="#{counter}-is_commentaire"/>
+                    </div>
                     <input class="d-none" type="text" t-attf-name="#{counter}-ticket_id" t-attf-value="#{ticket['id']}"/>
                 </div>
             </div>
