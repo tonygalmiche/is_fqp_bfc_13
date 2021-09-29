@@ -41,7 +41,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg my-2">
-                        <label>Commentaire</label>
+                        <label>Avez-vous des besoins spécifiques?</label>
                         <input class="form-control" type="text" t-attf-name="#{counter}-is_commentaire"/>
                     </div>
                     <input class="d-none" type="text" t-attf-name="#{counter}-ticket_id" t-attf-value="#{ticket['id']}"/>
